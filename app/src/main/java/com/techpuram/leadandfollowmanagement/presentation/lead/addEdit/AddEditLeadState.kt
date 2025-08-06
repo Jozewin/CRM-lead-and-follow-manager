@@ -1,0 +1,60 @@
+package com.techpuram.leadandfollowmanagement.presentation.lead.addEdit
+
+data class AddEditLeadState(
+    val id: Int? = null,
+    val name: String = "",
+    val contactId: Int? = null,
+    val contactName: String? = null,
+    val isConverted: Boolean = false,
+    val email: String? = null,
+    val mobile: String = "",
+    val status: String = "New", // Default to "New" status
+    val whatsappNumber: String? = null,
+    val leadSource: String? = null,
+    val createdTime: Long = System.currentTimeMillis(),
+    val modifiedTime: Long = System.currentTimeMillis(),
+    val cf1: String? = null,
+    val cf2: String? = null,
+    val cf3: String? = null,
+    val cf4: String? = null,
+    val cf5: String? = null,
+    val cf6: String? = null,
+    val cf7: String? = null,
+    val cf8: String? = null,
+    val cf9: String? = null,
+    val cf10: String? = null,
+    val cf11: String? = null,
+    val cf12: String? = null,
+    val cf13: String? = null,
+    val cf14: String? = null,
+    val cf15: String? = null,
+    val cf16: String? = null,
+    val cf17: String? = null,
+    val cf18: String? = null,
+    val cf19: String? = null,
+    val cf20: String? = null,
+    val prop: String? = null,
+    
+    // Validation error states
+    val nameError: String? = null,
+    val mobileError: String? = null,
+    val statusError: String? = null,
+    val generalError: String? = null,
+
+    val showConvertDialog: Boolean = false,
+    val createContactFromLead: Boolean = true,
+    val dealTitle: String = "",
+    val dealAmount: String = "",
+    val dealStage: String = "Initial Contact",
+    val dealClosingDate: Long? = null,
+    val dealProbability: String = "",
+    val dealDescription: String = "",
+    val availableStages: List<String> = listOf(
+        "Initial Contact",
+        "Proposal",
+        "Negotiation",
+        "Due Diligence",
+        "Closed Won",
+        "Closed Lost"
+    )
+)
